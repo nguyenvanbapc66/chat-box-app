@@ -1,0 +1,71 @@
+.App {
+  margin: 20px 400px;
+
+  .chat-box {
+    border: 1px solid #61dafb;
+    height: 800px;
+    background: #202124;
+    padding: 10px;
+    overflow-y: scroll;
+
+    .message {
+      margin-bottom: 10px;
+
+      span {
+        word-break: break-word;
+        max-width: 48%;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        background: #e4e6eb;
+        color: #000;
+      }
+
+      &--mine {
+        text-align: right;
+        span {
+          background: #0084ff;
+          color: #fff;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .text-input {
+    margin-top: 10px;
+
+    .input {
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      padding: 7px 12px;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .btn-send {
+      cursor: pointer;
+      margin-left: 5px;
+      padding: 0 6px;
+      background-color: #282c34;
+      border: none;
+      padding-top: 5px;
+      transition: opacity 0.5s ease;
+      opacity: 1;
+      border-radius: 50%;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
